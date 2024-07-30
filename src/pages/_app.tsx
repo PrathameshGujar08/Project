@@ -1,6 +1,19 @@
+import React, { useState } from "react";
 import "@/styles/globals.css";
-import type { AppProps } from "next/app";
+import Relay from "./shapes/Relay"
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+export default function App() {
+
+  return (
+    <>
+      <svg
+        width="100vw"
+        height="100vh"
+        viewBox="0 0 100 100"
+        style={{ border: "1px solid black" }}
+      >
+        <Relay />
+      </svg>
+    </>
+  );
 }
