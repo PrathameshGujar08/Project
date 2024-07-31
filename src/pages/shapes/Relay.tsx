@@ -1,24 +1,24 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Draggable from 'react-draggable'
+import React, { useEffect, useRef } from 'react';
+import PropTypes from 'prop-types';
+import Draggable from 'react-draggable';
 
-const Relay = props => {
-    return (
-        <>
-            <Draggable>
-                <g fill="white" stroke="black" stroke-width="0.5">
-                    <circle cx="22" cy="20" r="5" />
-                    <circle cx="11" cy="20" r="5" />
-                    <circle cx="0" cy="20" r="5" />
-                    <circle cx="-11" cy="20" r="5" />
-                    <circle cx="-22" cy="20" r="5" />
-                    <circle cx="-33" cy="20" r="5" />
-                </g>
-            </Draggable>
-        </>
-    )
-}
+const Relay = (props: any) => {
 
-Relay.propTypes = {}
+  return (
+        <Draggable grid={[5, 5]}>
+            <g fill="white" stroke="black" strokeWidth="0.5">
+            <circle cx="22" cy="20" r="5" />
+            <circle cx="11" cy="20" r="5" />
+            <circle cx="0" cy="20" r="5" />
+            <circle cx="-11" cy="20" r="5" />
+            <circle cx="-22" cy="20" r="5" />
+            <circle cx="-33" cy="20" r="5" />
+            </g>
+        </Draggable>
+  );
+};
 
-export default Relay
+Relay.propTypes = {
+};
+
+export default Relay;
