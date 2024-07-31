@@ -34,4 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+<<<<<<< HEAD
 ./src/pages/shapes/CustomGroup.tsx
+=======
+>>>>>>> 453b1d8e6566f96a02b4ad9119a2acb66c44abc0
