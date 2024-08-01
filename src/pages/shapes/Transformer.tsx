@@ -1,4 +1,4 @@
-import Draggable from "react-draggable";
+import Draggable from "react-draggable"
 
 interface transformer{
   id: string, value: string, x: number, y: number
