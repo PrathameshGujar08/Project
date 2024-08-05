@@ -4,7 +4,6 @@ import Draggable from 'react-draggable';
 const scale = 0.1; // Shrinking factor (50%)
 
 const EnergyMeter: React.FC = () => (
-    <Draggable>
     <g>
       <rect
         x={100 * scale}
@@ -139,7 +138,6 @@ const EnergyMeter: React.FC = () => (
         </switch>
       </g>
     </g>
-    </Draggable>
 );
 
 export default EnergyMeter;

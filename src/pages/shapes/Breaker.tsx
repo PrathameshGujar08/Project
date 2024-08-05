@@ -1,11 +1,9 @@
 import React from 'react';
-import Draggable from 'react-draggable';
 
 const scale = 0.1; // Shrinking factor (50%)
 
 const Breaker: React.FC = () => (
   <>
-    <Draggable>
     <g>
       <path
         d={`M ${25 * scale} ${214 * scale} L ${25 * scale} ${14 * scale}`}
@@ -127,7 +125,6 @@ const Breaker: React.FC = () => (
         pointerEvents="all"
       />
     </g>
-    </Draggable>
   </>
 );
 

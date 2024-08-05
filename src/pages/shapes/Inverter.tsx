@@ -13,7 +13,6 @@ const Inverter:React.FC<InverterProps> = ({ uniqueId, x, y,value }) => {
   const width = 30;
   const height = width/2;
   return (
-      <Draggable>
       <g
         fill="white"
         stroke="green"
@@ -38,7 +37,6 @@ const Inverter:React.FC<InverterProps> = ({ uniqueId, x, y,value }) => {
           {value}
         </text>
       </g>
-      </Draggable>
   );
 };
 

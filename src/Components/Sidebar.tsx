@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Sidebar = () => {
   const sidebarStyle = {
     height: "100vh",
-    width: "30vh",
+    width: "20vw",
     backgroundColor: "black",
     border: "1px solid white",
     position: "fixed",
